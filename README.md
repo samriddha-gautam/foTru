@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+# foTru
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> **yup, it's not just a routine app**
 
-## Get started
+A powerful routine management application built with React Native, Expo, and TypeScript. foTru helps you build and maintain your daily routines with an intuitive interface and robust local-first architecture.
 
-1. Install dependencies
+## 🎯 Features
 
-   ```bash
-   npm install
-   ```
+- **Routine Management** - Create, edit, and organize your daily routines
+- **Local Storage** - All data stored locally using SQLite for fast, offline-first experience
+- **TypeScript** - Fully typed codebase for better development experience and fewer bugs
+- **Cross-platform** - Works seamlessly on both iOS and Android
 
-2. Start the app
+## 🚀 Upcoming Features
 
-   ```bash
-   npx expo start
-   ```
+- **Collaboration** - Share and collaborate on routines with others
+- **Cloud Sync** - Automatic synchronization with Supabase backend
+- **Offline-first Sync** - PowerSync integration for seamless local-remote data synchronization
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Framework**: React Native / Expo
+- **Language**: TypeScript
+- **Local Database**: SQLite
+- **Backend** (Coming Soon): Supabase / PostgreSQL 👀
+- **Sync Engine** (Coming Soon): PowerSync 👀
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## 📄 License
 
-When you're ready, run:
+© 2024 foTru. All rights reserved.
 
-```bash
-npm run reset-project
-```
+This is proprietary software. The source code is not available for public use, modification, or distribution.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📧 Contact
 
-## Learn more
+-**website**: samriddhagautam.com.np
 
-To learn more about developing your project with Expo, look at the following resources:
+- **email**: samridgautam@gmail.com
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Built with ❤️ for better routines**
