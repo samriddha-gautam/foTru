@@ -6,6 +6,7 @@ export interface Routines {
   status: boolean;
   schedule: RoutineSchedule;
   description?: string;
+  createdAt : string;
 }
 
 export interface RoutineSchedule {

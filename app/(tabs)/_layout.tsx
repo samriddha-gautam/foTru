@@ -44,6 +44,19 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "profile",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "man" : "man-outline"}
+              size={28}
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }

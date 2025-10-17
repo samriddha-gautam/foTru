@@ -34,8 +34,8 @@ This is proprietary software. The source code is not available for public use, m
 
 ## 📧 Contact
 
--**website**: samriddhagautam.com.np
+- **website**: samriddhagautam.com.np
 
 - **email**: samridgautam@gmail.com
 
-**Built with ❤️ for better routines**
+**Built with ❤️ for better habits**

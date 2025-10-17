@@ -24,6 +24,7 @@ export const RoutineProvider: React.FC<{ children: ReactNode }> = ({
       schedule,
       status: false,
       description,
+      createdAt : Date.now().toString()
     };
     setRoutines([...routines, newRoutine]);
   };
