@@ -1,6 +1,7 @@
-import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import { ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import React, { useEffect, useState } from "react";
 import { useUser } from "@/hooks/useUser";
+import Button from "../common/Button";
 
 const Login = () => {
   const { createUser } = useUser();
@@ -10,6 +11,7 @@ const Login = () => {
 
 
   const handleSubmit = () => {
+    console.log(username,name)
     createUser({
       name,
       username,
@@ -33,6 +35,10 @@ const Login = () => {
           placeholder="Enter username"
         />
       </View>
+      <Button
+        title="Submit"
+        onPress={handleSubmit}
+      />
     </ScrollView>
   );
 };

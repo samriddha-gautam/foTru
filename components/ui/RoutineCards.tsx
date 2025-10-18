@@ -17,7 +17,6 @@ const Cards = () => {
             
           </View>
         ))}
-        <Button />
       </View>
     </SafeAreaView>
   );

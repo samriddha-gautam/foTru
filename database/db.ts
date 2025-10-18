@@ -4,17 +4,17 @@ const db = SQLite.openDatabaseSync("foTru.db");
 
 export const dbInit = async () => {
   try {
-    await db.execAsync(/* sql */ ` 
+    await db.execAsync(` 
             PRAGMA journal_mode = WAL;
             CREATE TABLE IF NOT EXISTS users(
-              id text primary not null ,
+              id text primary key not null ,
               name text not null, 
               username text not null, 
-              created_at integer default (unixepoch())
+              created_at integer default (unixepoch()),
               updated_at integer default (unixepoch()) 
             );
             CREATE TABLE IF NOT EXISTS routines(
-              id text primary not null,
+              id text primary key not null,
               user_id text not null,
               name text not null,
               description text,
@@ -22,7 +22,7 @@ export const dbInit = async () => {
               status integer default 0,
               created_at integer default (unixepoch()),
               updated_at integer default (unixepoch()),
-              FOREIGN KEY user_id REFERENCES users(id) ON DELETE CASCADE
+              FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
             );
 
             CREATE INDEX IF NOT EXISTS idx_users_username ON users(username);
@@ -44,11 +44,11 @@ export const dbInit = async () => {
               UPDATE routines SET updated_at = unixepoch() WHERE id=OLD.id;
             END;
         `);
-        console.log('Initialized database successfully')
+    console.log("Initialized database successfully");
   } catch (error) {
-    console.log("Failed to initialize database",error);
+    console.log("Failed to initialize database", error);
     throw error;
   }
 };
 
-export {db}
+export { db };

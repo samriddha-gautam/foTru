@@ -12,7 +12,7 @@ export default function RootLayout() {
 
   const initDB = async () => {
     try {
-      await dbInit;
+      await dbInit();
       console.log("database ready");
     } catch (error) {
       console.log("errror initializing db", error);
