@@ -7,4 +7,5 @@ export interface User {
 export interface UserContextType {
   user: User | undefined;
   createUser: (user: Omit<User, "id">) => Promise<void>;
+  logout: () => void;
 }

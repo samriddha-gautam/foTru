@@ -6,6 +6,7 @@ import { Alert } from "react-native";
 export const UserContext = createContext<UserContextType>({
   user: undefined,
   createUser: async () => {},
+  logout:()=>{},
 });
 
 export const UserProvider: React.FC<{ children: ReactNode }> = ({
@@ -15,7 +16,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({
 
   useEffect(() => {
     loadUser();
-  });
+  },[]);
   const loadUser = async () => {
     try {
       const result = await db.getAllAsync<User>(
@@ -49,9 +50,14 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({
       throw error;
     }
   };
+
+  const logout =()=>{
+    setUser(undefined)
+  }
   const value = {
     user,
     createUser,
+    logout
   };
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };

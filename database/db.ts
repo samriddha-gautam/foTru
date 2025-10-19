@@ -10,6 +10,7 @@ export const dbInit = async () => {
               id text primary key not null ,
               name text not null, 
               username text not null, 
+              is_active integer default 0,
               created_at integer default (unixepoch()),
               updated_at integer default (unixepoch()) 
             );
